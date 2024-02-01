@@ -1,0 +1,21 @@
+{
+  "name": "CGM",
+  "type": "module",
+  "devDependencies": {
+    "@wdio/allure-reporter": "^8.29.3",
+    "@wdio/cli": "^8.29.3",
+    "@wdio/local-runner": "^8.29.5",
+    "@wdio/mocha-framework": "^8.29.3",
+    "@wdio/spec-reporter": "^8.29.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3",
+    "wdio-wait-for": "^3.0.10"
+  },
+  "scripts": {
+    "wdio": "wdio run ./wdio.conf.ts",
+    "report": "allure generate allure-results --clean && allure open"
+  },
+  "dependencies": {
+    "allure-commandline": "^2.26.0"
+  }
+}
